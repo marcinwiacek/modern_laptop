@@ -1,4 +1,4 @@
-**Modern laptop design guidelines Release 1 draft 2 (2026)**
+**Modern laptop design guidelines Release 1 draft (2026)**
 
 This specification is available on the mwiacek.com and github.com/marcinwiacek/modern_laptop as text, PDF and ODT document.
 
@@ -49,8 +49,6 @@ purposes only (they belong to their respective owners).
 
 **Version history**
 
-*Release 1 draft 2 – 7 March 2026*
-
 *Release 1 draft – 1 March 2026*
 
 Notes can be sent on the git-hub or directly to the Marcin Wiącek: marcin (***dot***) wiacek (***at***) mwiacek(***dot***)com
@@ -62,7 +60,7 @@ light devices and difference between 13” and 14” is so small, that 13,6”, 
 
 Next laptop size is 15,6” and various notes from this document can be of course scaled.
 
-There will be discussed mainly classic form (bottom part with battery, motherboard, touchpad and keyboard staying on the surface, top part with the screen opening with different angles).
+There will discussed mainly classic form (bottom part with battery, motherboard, touchpad and keyboard staying on the surface, top part with the screen opening with different angles).
 
 We don’t cover here other forms, for example:
 
@@ -83,10 +81,8 @@ Let’s look on some available models:
 |Clevo (the whole series including L14xMU)  |72          |14        |990       |
 |GEEKOM GeeBook X14 Pro                     |72          |14        |999       |
 |HONOR MagicBook Art 14 2025                |60          |14,6      |1030      |
-|Lenovo T14s gen 7                          |58          |14        |1100      |
 |Dell XPS13 with Lunar Lake                 |55          |13,4      |1210      |
 |Macbook Air 13 M4                          |53,8        |13,6      |1225      |
-|Macbook Neo                                |36,5        |13        |1230      |
 |Framework 13                               |61          |13,5      |1300      |
 |Dell XPS14 with Panther Lake               |70          |14        |1380      |
 |Honor MagicBook Pro 14 2026                |92          |14,6      |1415      |
@@ -116,7 +112,7 @@ We welcome using modern chemistry (carbon batteries) and batteries with more cha
 
 Many years ago people were using CRT displays (big, heavy, with all kind of radiation and blinking). Later we have seen plasma displays and they were gone after some time. 
 
-Market went into LCD displays with long time reaction & backlight done with PWM (it’s fast enabling and disabling it). Some people were highly reacting with eyes problems and headache and many companies happily started using DC backlight (all backlight LED are just using different voltage, but working the whole time). The main problem here is, that today almost nobody clearly specify, whether there is PWM or DC used.
+Market went into LCD displays with long time reaction & backlight done with PWM (it’s fast enabling and disabling for it). Some people were highly reacting with eyes problems and headache and many companies happily started using DC backlight (all backlight LED are just using different voltage, but working the whole time). The main problem here is, that today almost nobody clearly specify, whether there is PWM or DC used.
 
 And we have seen the same backlight problem with OLED displays – they’re simply blinking (typical PWM frequency is 120 or 240Hz) and according to our best knowledge only one company (Honor) is making something more with this providing PWM backlight working with 4320Hz or DC dimming.
 
@@ -131,11 +127,11 @@ Every class should contain matt/non-glare/anti-glare version (or something simil
  1. better contrast (at least 1500:1, everything below 1000:1 is totally unacceptable),
  2. color coverage at least so good like in models available few years ago, which means 100% sRGB (market cannot go back and implement quality from previous decades),
  3. DC dimming (PWM should be excluded at all),
- 4. clear information about number of colors supported by hardware (whether this is 6, 8 or 10-bit color palette), which cannot be smaller than supported by OS sold with device
+ 4. clear information about number of colors supported by hardware (whether this is 6, 8 or 10-bit color palette)
  5. at least 300 or 400 nits for maximal brightness
  6. information about minimal brightness (it should be as low as possible)
 
-We don’t define here backlight bleeding, color temperature (although ideal is 6500K), viewing angles (for IPS they’re typically very good), black level & response time (both should be as small as possible), blue light mitigation type, display refresh rates (whether it’s just 60Hz or more) and similar things, but we believe, that better parameters are always welcome and this in manufacturers interest improving them. Glass & touch layers and privacy filters must be clearly marked, because in many implementations they can lead to the quality decrease because of reflections or picture angles.
+We don’t define here color temperature (although ideal is 6500K), viewing angles (for IPS they’re typically very good), black level & response time (both should be as small as possible), blue light migrations type, display refresh rates (whether it’s just 60Hz or more) and similar things, but we believe, that better parameters are always welcome and this in manufacturers interest improving them. Glass & touch layers and privacy filters must be clearly marked, because in many implementations they can lead to the quality decrease because of reflections or picture angles.
 
 We observe today big logical error in strategy saying:
 
@@ -144,11 +140,11 @@ We observe today big logical error in strategy saying:
 
 Today many users need (second) laptop just for editing texts, watching videos in Youtube or making remote connection to VDIs with good internals. Cheap devices are normally used in schools and work and many times cannot be replaced because of budget or policy (this makes problems, when especially young people are forced to use them and cannot check with doctor, if they’re vulnerable to screen issues). 
 
-Currently even reputable brands can be problematic for some people – Macbook Pro are using PWM and both Air and Pro are using different brightness on the edges and so called temporal dithering, which is simulating more colors than supported by hardware with fast changing available one (people are trying to mitigate this problem with tools like StillColor, but it’s not always working).
+Currently even reputable brands can be problematic for some people – Macbook Pro are using PWM and both Air and Pro are using different brightness on the edges and so called temporal dithering (people are trying to mitigate this problem with tools like StillColor, but it’s not always working).
 
 Please have in mind, that panels from first group (FullHD or 2K) in various devices can provide up to 10 more hours of battery work, they just need to be adjusted by user for comfortable work (it’s connected with setting up operating system, using correct font size, scaling and anti-aliasing and sometimes requires resigning from Linux distributions based on Gnome/GTK 4.x, because they provide just gray anti-aliasing and don’t handle especially such panels in very nice way).
 
-Although many companies are giving various useful information, we would like to appreciate especially Tuxedo and their clear statement “no PWM used”. In ideal situation for every class there should be provided list of hardware models (we cannot have so called “lottery”) and connector info and BIOS shouldn’t be locked to any specific module (model or part number).
+In ideal situation for every class there should be provided list of hardware models (we cannot have so called “lottery”) and connector info and BIOS shouldn’t be locked to any specific module (model or part number).
 
 Device could have light sensor, but in any case user must have option for disabling it.
 
@@ -217,7 +213,7 @@ Proposed test for manufactures: putting liquid on the keyboard, waiting until it
 
 **Touchpad**
 
-Today there are used two types: classic (capacitive, resistive, etc.) or haptic.
+Today there are used two types: classic or haptic.
 
 In minimal configuration user should see only:
 
@@ -228,7 +224,7 @@ Edges must be clearly marked and separated from device edges (Dell and Asus trie
 
 Device could implement automatic disabling internal touchpad after connecting external USB mouse or could have Fn+key option for setting it on/off.
 
-Capacitive touchpads seems to be generally more energy effective than other (for example haptic version with motors) and we advice to give user choice, which version need. Some extra implementations could provide e-ink on the the touchpad surface and displaying some data (or even using this area for providing touch surface with ability of pen writing like in Compal Al Book) or putting some solar panel on the surface to satisfy power requirements.
+In ideal situation there should be used touch layer known from phone/tablets (when this is more efficient than classic touchpad models) and user should know, whether haptic version (with motors) need more energy than classic one. Some extra implementations could provide e-ink on the the touchpad surface and displaying some data (or even using this area for providing touch surface with ability of pen writing like in Compal Al Book).
 
 All holes between edges and internals should be somewhere protected. Proposed test for manufacturers: putting liquid on the touchpad surface, waiting until it disappear and checking, that device is still correctly working.
 
@@ -297,7 +293,7 @@ Experience say, that companies many times are setting up cooling in very conserv
 
 We don’t accept using liquid metal at all – in the end it makes often electrical shortcuts or damage structure of the chip in the motherboard (in Youtube you can find various repairs related to it from Asus devices). The same problem is with liquid cooling.
 
-Fans should be implemented using standard models and they should work in the most silent way. We like separating fan from the cooling plate connected to CPU with thermal paste (it should be implemented in some Lenovo). Very good idea is also implementing reverse fan mode like in TravelMate P6 (it could help in removing dust).
+Fans should be implemented using standard models and they should work in the most silent way. Very good idea is implementing reverse fan mode like in TravelMate P6 (it could help in removing dust).
 
 We recommend providing cooling not only into CPU and chipset, but also into disk, Wifi card, VRM regulators and RAM.
 
@@ -309,11 +305,7 @@ There are three possibilities:
  2. SO-DIMM modules
  3. CAMM2 modules
 
-First and third options can use less energy and are recommended (CAMM2 seems to be future). There could be used hybrid approach like in some Clevo laptops – LPDDR + one slot (SO-DIMM). If device has got few physical modules, it would be good to give option for disabling some of them (in case, when they’re damaged or when user wants to save power).
-
-Minimum amount of suggested RAM highly depends on OS, but with today very light usage it should probably no less than 8GB (more advanced users will probably prefer at least 16 or 32 GB especially when part of it will be used by integrated graphic card).
-
-There must be always dual-channel configuration used (when of course supported by CPU).
+First and third options can use less energy and are recommended. There could be used hybrid approach like in some Clevo laptops – LPDDR + one slot (SO-DIMM). If device has got few physical modules, it would be good to give option for disabling some of them (in case, when they’re damaged or when user wants to save power).
 
 **User data**
 
@@ -344,14 +336,14 @@ Currently in the market we have few standard implementations, for example produc
 We have few recommendations:
 
  1. Coreboot is preferred because it’s provided with source (in the same time we understand that sometimes it cannot be used because of enterprise requirements or legal reasons)
- 2. all main BIOS implementations from the box normally provide many options, but manufacturers are limiting them to avoid problems with wrong configuration by users. We’re against this practice – better technical options are much more important than for example nice GUI. Example of useful options: number of CPU cores, enabling Turbo Boost, TDP limits, disabling some interfaces and ports.
+ 2. all main BIOS implementations from the box normally provide many options, but manufacturers are limiting them to avoid problems with wrong configuration by users. We’re against this practice – better technical options are much more important than for example nice GUI
  3. BIOS should provide clear info, whether device is after normal support cycle from the manufacturer
  4. device during editing BIOS options and booting should go into highest possible energy saving mode
  5. flashing new version should be only possible after switching some jumper on the motherboard or after pressing some special Fn combination on the start (without it all chips in motherboard without exception should be switched into read-only mode)
  6. wrong flashing new version or changing settings should not be problem – especially better and more expensive motherboards could start from backup and should have automatically called “reset to default” after few incorrect POST procedures
  7. devices should not have RTC battery anymore (we like Framework suggestion that motherboard could use them just in some cases)
  8. there should be provided basic hardware info and upgrade from the BIOS level
- 9. we don’t like QR codes in BIOS (they can potentially transfer to suspicious pages)
+ 9. we don’t like QR codes in BIOS (they can transfer potentially to suspicious pages)
 
 **TPM and Secure Boot**
 
@@ -359,7 +351,7 @@ There are many reports, that Microsoft is using TPM for tracking user activities
 
 **Intel ME or vPro Enterprise Management**
 
-They’re used for making remote connection to the device and doing something even without OS knowledge. First of them is implemented even in consumer products and was criticized for years because of unclear structure and possible security flaws – it can bypass operating system security, disk encryption and send something without any user action (interesting thing: in later versions it seems to be implemented in Arm processor running MINIX operating system)
+They’re used for making remote connection to the device and doing something even without OS knowledge. First of them is implemented even in consumer products and was criticized for years because of unclear structure and possible security flaws.
 
 We strongly recommend, that every company should allow installing latest ME firmware versions separately from main BIOS updates as long as they’re provided by Intel (the same is with AGESA from AMD).
 
@@ -407,29 +399,29 @@ green LED, when it’s done correctly (but only for moment)
 
 Notebookcheck is making review of different devices. We assume, that their results are quite comparable (idle contains minimum measured value):
 
-|Device	                                        |Off [W]| Standby [W] |	Idle [W] |
-|-----                                          |-----  |-----        |------    |
-|Macbook Air M1 8GB RAM	                        |0.03   |0.04	|1.9    |
-|tablet Lenovo Yoga Tab 12GB 11.1” 3200x200 LTPS|0.1	|0.2    |1.2    |
-|tablet iPad 2025 6GB 11” 2360x1640 IPS	        |0.12   |0.17   |1.43   |
-|tablet Poco Pad X1 8GB 11,2” 3200x2136 TFT	    |0.07   |0.16   |0.7    |
+|Device	|Off [W]	| Standby [W] |	Idle [W] |
+|-----  |-----      |-----        |------    |
+|Macbook Air M1 8GB RAM	| 0.03 |	0.04	| 1.9 |
+|tablet Lenovo Yoga Tab 12GB 11.1” 3200x200 LTPS|	0.1	|0.2|	1.2|
+|tablet iPad 2025 6GB 11” 2360x1640 IPS	|0.12|	0.17|	1.43|
+|tablet Poco Pad X1 8GB 11,2” 3200x2136 TFT	|0.07|	0.16|	0.7|
 
 Windows laptops look always much worse, for example:
 
-|Device                                                 | Off [W]|	Standby [W]|	Idle [W]|
-|------                                                 |-----   |-----        |------      |
-|Schenker VIA 14 2021 Intel 16GB 14” 1920x1080 IPS      |	0.23	|0.74 |	2.9|
-|Lenovo T14s gen 6 Snapdragon 32GB 14” 1920x1200 IPS    | 	0.4	    |0.8  |	2.4|
-|Lenovo T14s gen 6 Lunar Lake 32GB 14” 1920x1200 IPS    |	0.3	    |0.7  | 3  |
-|Lenovo T14s gen 6 AMD 32GB 14” 1920x1200 IPS           |	0.2	    |0.5  | 2.8|
-|Dell Pro 13 Premium Lunar Lake 32GB 1920x1200 IPS      |	0.15    |0.6  |	2  |
-|Dell XPS13 2025 Lunar Lake 16GB 13,4” 1920x1200 IPS    |	0.35    |0.56 |	1.3|
-|Dell XPS14 2026 Intel 355 16GB 14” 1920x1200 IPS       |	0.18	|0.67 |	1.6|
-|Dell XPS14 2026 Intel 358H 32GB 14” 2880x1800 OLED     |	0.21	|0.8  |	3.1|
-|Framework Intel 155H 32GB 13,5” 2880x1920 IPS          |	0.38	|1.1  | 2.5|
-|Geebook X14 Pro Intel 32GB 14” 2880x1800 OLED          |   0.8	    |1.2  | 6  |
-|Chuwi CoreBook Air AMD 16GB 14” 1920x1200 IPS	        |   0.78    |0.83 |	3.9|
-|Honor MagicBook Pro 14 2026 32GB 14,6” 3120x2080 OLED  |	0.11    |0.8  |	6.8|
+|Device|	Off [W]|	Standby [W]|	Idle [W]|
+|------|-----|-----|------|
+|Schenker VIA 14 2021 Intel 16GB 14” 1920x1080 IPS|	0.23	|0.74|	2.9|
+|Lenovo T14s gen 6 Snapdragon 32GB 14” 1920x1200 IPS| 	0.4	|0.8|	2.4|
+|Lenovo T14s gen 6 Lunar Lake 32GB 14” 1920x1200 IPS|	0.3	|0.7	|3|
+|Lenovo T14s gen 6 AMD 32GB 14” 1920x1200 IPS|	0.2	|0.5	|2.8|
+|Dell Pro 13 Premium Lunar Lake 32GB 1920x1200 IPS|	0.15|	0.6|	2|
+|Dell XPS13 2025 Lunar Lake 16GB 13,4” 1920x1200 IPS|	0.35|	0.56|	1.3|
+|Dell XPS14 2026 Intel 355 16GB 14” 1920x1200 IPS|	0.18	|0.67|	1.6|
+|Dell XPS14 2026 Intel 358H 32GB 14” 2880x1800 OLED|	0.21	|0.8|	3.1|
+|Framework Intel 155H 32GB 13,5” 2880x1920 IPS|	0.38	|1.1|	2.5|
+|Geebook X14 Pro Intel 32GB 14” 2880x1800 OLED|0.8	|1.2	|6|
+|Chuwi CoreBook Air AMD 16GB 14” 1920x1200 IPS	| 0.78	| 0.83|	3.9|
+|Honor MagicBook Pro 14 2026 32GB 14,6” 3120x2080 OLED|	0.11|	0.8|	6.8|
 
 Can be standby power usage explained just by refreshing bigger RAM? (it’s sometimes even 5x bigger and we don’t even compare to Macbook, which potentially can save everything to disk) Or is cost of resuming device by pressing touchpad or any key? Or wrong design, where camera and unnecessary elements are not off? Or finally Intel ME?
 
@@ -437,9 +429,7 @@ Why we get sometimes even 6x bigger power usage in idle with some models than in
 
 And finally why we get such high numbers in off state? They should be practically equal zero (we recommend 0.01W when possible) - currently mobile laptops have bigger power drain than stationary devices connected 24/7 to the wall socket.
 
-The answer could be partially connected with EC (Embedded Controller) working even when device is off (quite good explanation of it is provided by “EC HACKING: YOUR LAPTOP HAS A MICROCONTROLLER”) – it looks that many designs are probably not taking enough care of optimizing it and making it energy efficient. Companies are the most often probably following design with Zephyr OS – is it time for change? And time for thinking about power draw coming from all lights and other elements mentioned in this document? (small separately, huge together) Or publishing EC firmware source to allow users preparing more effective version? (like it’s done with Framework products and already allows for fixing bugs, see for example “A Framework Laptop Hacking Story”)
-
-EC power usage is very interesting topic – for example W83L951DG spec from 2006 say about input voltage 3.3V and typical power usage 30 mA (it gives 0.1W). Is this real? And what about other models? Is this the same level?
+The answer could be partially connected with EC (Embedded Controller) working even when device is off – it looks that many designs are probably not taking care of optimizing it and making it energy efficient. Companies are the most often probably following design with Zephyr OS – is it time for change? And time for thinking about power draw coming from all lights and other elements mentioned in this document? (small separately, huge together)
 
 We believe, that today companies cannot implement “something” and we just ask for:
 
@@ -463,7 +453,7 @@ Although it’s comfortable, when device could have working OS just after unpack
 
 **Modularity**
 
-In our opinion devices should have as high note as possible according to iFixit (and for example good example is Lenovo T14 and T16 gen 7 with score 10/10).
+In our opinion devices should have as high note as possible according to iFixit.
 
 We strongly advice providing updates ability for older models (very good example is Framework giving few motherboards and other parts for the same case or Compal Adapt X concept). 
 
@@ -500,7 +490,7 @@ People don’t need stickers on the case+very long unclear product names (“HP 
 
 Companies selling hardware should rather concentrate on improving it than advertising and creating own OS – we don’t like initiatives like Pop!_OS, because it looks like unnecessary splitting resources (in our opinion much better works providing generic hardware or putting drivers directly into Linux kernel)
 
-**Problem mentioned in the abstract**
+**Problems mentioned in the abstract**
 
 This document was mainly created in Ubuntu 22.04 working in the 14” Hyperbook L14 from 2021 (Clevo L140MU, which is almost the same like Schenker VIA 14 2021) with Intel 11gen, 8GB RAM, 1kg, black matt case, low power LCD screen, battery 73Wh, Samsung SSD, no ventilation holes on the bottom. Device was configured for passive work and initially achieving 36h on the battery in the light text editing work, it’s currently using S0iX (S3 doesn’t work very well) and entering maximally into C8 CPU power level (minimum powertop usage is 1.82W and normally in idle it’s ca. 2W shown).
 
@@ -518,4 +508,4 @@ It was not replaced yet, because in 2026 it’s impossible to find something at 
  10. Lenovo T14s gen 6 Lunar Lake (heavier, fan on the bottom, smaller battery)
  11. Lenovo T14s gen 6 Snapdragon (heavier, fan on the bottom, smaller battery, Linux compatibility problems)
 
-We understand, that there is progress between 2021 and 2026… but too many things are on the same or worse level. New models don’t need new CPU only (problems are deeper and much more fundamental) and in this context interesting is, that innovations or correctly done projects are coming mainly from Asia or Japan.
+We understand, that there is progress between 2021 and 2026… but too many things are on the same or worse level and thinking, that new models need new CPU only is wrong (problems are deeper and much more fundamental).
