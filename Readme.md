@@ -49,7 +49,7 @@ purposes only (they belong to their respective owners).
 
 **Version history**
 
-*Release 1 draft 2 – 7 March 2026*
+*Release 1 draft 2 – 8 March 2026*
 
 *Release 1 draft – 1 March 2026*
 
@@ -104,9 +104,9 @@ We strongly believe, that user should have two choices:
  1. battery as big as possible (starting from 72Wh, can be maximally 99Wh because of airlines regulations)
  2. small battery (for example 20Wh), which could be just used, when laptop is moved from desk to desk - in all companies and corporations devices are normally connected to the charger or docking station and it’s enough to have 20-30 minutes working time
 
-Battery should have easy ability of disconnecting, when user has got standard screwdriver. There shouldn’t be special manual skills required for this and connector should be designed this way, that user can easy connect it or disconnect without big force and making shortcuts on the motherboard.
+Battery should have easy ability of disconnecting, when user doesn’t have any tools or has got standard screwdriver only. There shouldn’t be special manual skills required for this and connector should be designed this way, that user can easy connect it or disconnect without big force and making shortcuts on the motherboard.
 
-Power sources should give information about number of full charging cycles, designed and current capacity, charging power, manufacturing date, manufacturer and serial number. Users should be informed about estimated cycles, when battery is going into 80% of designed capacity (companies should provide similar information like for the phones in the EU).
+Power sources should give information about number of full charging cycles, designed and current capacity, charging power, manufacturing date, manufacturer and serial number. Users should be informed about estimated cycles, when battery is going into 80% of designed capacity (companies should provide similar information like for the phones in the EU). It’s recommended to detect and provide info, when some cells totally lost capacity (and battery charged for example to 30% goes immediately to 0%).
 
 Good practice is implementing maximal charging levels or charging patterns in BIOS (Framework has got it latest 3.x BIOS releases, Dell and good companies for years)
 
@@ -152,7 +152,7 @@ Although many companies are giving various useful information, we would like to 
 
 Device could have light sensor, but in any case user must have option for disabling it.
 
-We concentrate in this document on classic form and of course there are already some devices with foldable screens (Compal Inifinite or Thinkpad X1 Fold) or two displays (Asus Zenbook Duo) – all notes about picture quality apply to them.
+We concentrate in this document on classic form and of course there are already some devices with foldable screens (Compal Inifinite or Thinkpad X1 Fold) or two displays (Asus Zenbook Duo) – all notes about picture quality apply to them.  Companies can provide e-ink – it should be alternative to standard solutions.
 
 **Case colors**
 
@@ -183,7 +183,7 @@ Number one is preferred, because:
 
 We don’t recommend any ventilation holes on the top (left and right side of the keyboard) and bottom – all ventilation should go over sides (back part from the screen side, but created this way, that will not heat screen too much).
 
-MIL-STD 8106 or IP norm and protection against liquid and dust are very welcome. Case cannot be twisted and we don’t welcome any stickers on it (in the end user is paying for them and they don’t provide any added value). Additionally it should be possible to open screen just with one hand.
+MIL-STD 8106 or IP norm and protection against liquid and dust are very welcome. Case cannot be twisted and we don’t welcome any stickers on it (in the end user is paying for them and they don’t provide any added value). Additionally it should be possible to open screen just with one hand. Connector between screen and mainboard should be prepared for many open/close cycles (in some Apple devices it was made too short) and all higher voltage signals inside should be separated from the others (it cannot be, that even small overvoltage will damage it).
 
 **Keyboard**
 
@@ -327,7 +327,7 @@ We also very recommend to provide clear information about power usage with sold 
 
 **Mainboard/motherboard**
 
-It should consist of three parts: main motherboard and flexible modules on two sides with external connectors (one on the left, one on the right)
+It should consist of three parts: main motherboard and flexible modules on two sides with external connectors (one on the left, one on the right). Everything should be connected on one side to help with easy repairing. There shouldn’t be used glue anywhere (sometimes it’s used to compensate thin laminate micro movements)
 
 It’s strongly advised, that motherboard is using standard market standards like M.2 2280 (NVME when possible, eventually SATA in cheaper devices), one or two M.2 2240 (for extension cards like second disk, NPU, FPGA, WWAN or Wifi). All slots should be fully disabled in BIOS – it can allow for example for using just one disk and switching between private and work configuration.
 
@@ -351,7 +351,7 @@ We have few recommendations:
  6. wrong flashing new version or changing settings should not be problem – especially better and more expensive motherboards could start from backup and should have automatically called “reset to default” after few incorrect POST procedures
  7. devices should not have RTC battery anymore (we like Framework suggestion that motherboard could use them just in some cases)
  8. there should be provided basic hardware info and upgrade from the BIOS level
- 9. we don’t like QR codes in BIOS (they can potentially transfer to suspicious pages)
+ 9. we don’t like QR codes in BIOS (they can transfer potentially to suspicious pages)
 
 **TPM and Secure Boot**
 
@@ -469,13 +469,17 @@ We strongly advice providing updates ability for older models (very good example
 
 Locking components on the model/serial number (making “white lists”) is not acceptable and unfortunately Apple is good example of such bad behaviors. 
 
-In the future it could be for example considered:
+It should be for example considered:
 
- 1. replacing battery, motherboard, RAM, disk, touchpad and keyboard by user
- 2. providing own external connector modules like earlier described (Framework compatible)
+ 1. replacing battery, motherboard, RAM, disk, touchpad, camera, speakers, keyboard, wifi by user
+ 2. providing own external connector modules like described earlier (Framework compatible)
  3. disconnecting the whole part with the screen and using it as separate monitor
  4. using motherboard outside in the mini PC case like proposed by Framework
  5. using keyboard and touchpad remotely/on the cable
+ 6. using standard screws with the same length each
+ 7. non-using glue
+ 8. putting all connectors in easy accessible and visible places
+ 9. reusing components among other models
 
 **Sales**
 
@@ -518,4 +522,4 @@ It was not replaced yet, because in 2026 it’s impossible to find something at 
  10. Lenovo T14s gen 6 Lunar Lake (heavier, fan on the bottom, smaller battery)
  11. Lenovo T14s gen 6 Snapdragon (heavier, fan on the bottom, smaller battery, Linux compatibility problems)
 
-We understand, that there is progress between 2021 and 2026… but too many things are on the same or worse level. New models don’t need new CPU only (problems are deeper and much more fundamental) and in this context interesting is, that innovations or correctly done projects are coming mainly from Asia or Japan.
+We understand, that there is progress between 2021 and 2026… but too many things are on the same or worse level. New models don’t need new CPU only (problems are deeper and much more fundamental) and in this context interesting is, that innovations or correctly done projects are coming mainly from Asia or Japan  today and US companies are in retreat (we have very self-descriptive situation with Apple - after migrating to 16GB RAM because of user comfort and progress they decided to release Macbook Neo with 8GB RAM, which the most probably even tomorrow will be e-waste)
